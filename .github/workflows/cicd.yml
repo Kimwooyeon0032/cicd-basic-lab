@@ -50,6 +50,7 @@ jobs:
 
       # 3. Maven 빌드
       - name: Build with Maven
+        working-directory: cicd-basic-lab
         run: mvn clean package -DskipTests -B # target/폴더에 .jar 생성
 
       # 4. OIDC 인증
